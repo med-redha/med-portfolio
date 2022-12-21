@@ -16,18 +16,18 @@
       
     </div>
     <div class="bar-section ">
-      <div class="skills_grp"></div>
+      <div class="skills_grp">
+        <v-icon x-large dark >mdi-language-html5</v-icon>
+        <v-icon x-large dark>mdi-vuejs</v-icon>
+        <v-icon x-large dark>mdi-vuetify</v-icon>
+        <v-icon x-large dark>mdi-git</v-icon>
+        <v-icon x-large dark>mdi-linux</v-icon>
+        <v-icon x-large dark>mdi-sass</v-icon>
+        <v-icon x-large dark>mdi-language-javascript</v-icon>
+      </div>
     </div>
     <div class="projects_section mt-16">
       <div class="ps_title mt-16">Latest Projects</div>
-      <div class="ps_title">Latest Projects</div>
-      <div class="ps_title">Latest Projects</div>
-      <div class="ps_title">Latest Projects</div>
-      <div class="ps_title">Latest Projects</div>
-      <div class="ps_title">Latest Projects</div>
-      <div class="ps_title">Latest Projects</div>
-      <div class="ps_title">Latest Projects</div>
-      <div class="ps_title">Latest Projects</div>
       <div class="projects_holder">
         <project-case v-for="(cmp,index) in cases " :key="index" :cmp="cmp"/>
       </div>
@@ -65,15 +65,13 @@ components:{
           subtitle:'breif app explanation',
           btnOne:'Demo',
           btnTwo:'mdi-github',
-          btnTwtxt:'Code',
         },
         {
           img:prevTwo,
           title:'Project Name',
           subtitle:'breif app explanation',
           btnOne:'Demo',
-          btnTwo:'mdi-github',
-          btnTwtxt:'Code',
+          btnTwo:'mdi-github ',
         },
         {
           img:prevThree,
@@ -81,7 +79,6 @@ components:{
           subtitle:'breif app explanation',
           btnOne:'Demo',
           btnTwo:'mdi-github',
-          btnTwtxt:'Code',
         },
       ],
     };

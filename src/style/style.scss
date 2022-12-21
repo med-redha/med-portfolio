@@ -5,55 +5,72 @@
     max-width: 1280px;
   }
 }
-.footer{
+input {
+  outline: none;
+}
+textarea {
+  outline: none;
+}
+.footer {
   height: 800px;
   width: 1280px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  .contact_box{
+  .contact_box {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 700px;
     height: 400px;
-    background-color: #1F1F1A;
+    background-color: #1f1f1a;
     box-shadow: -1px 3px 6px 0px #244400;
-    .box_row{
-      .box_txt{
+    .box_row {
+      .box_txt {
+        font-family: "Inter", sans-serif;
         color: white;
+        font-size: 18px;
+        font-weight: 400;
       }
-      .box_input{
+      .box_input {
         background-color: #141411;
         color: white;
         height: 38px;
         width: 580px;
+        border-radius: 8px;
       }
-      .boxMail_input{
+      .boxMail_input {
         background-color: #141411;
         color: white;
         height: 38px;
         width: 580px;
+        border-radius: 8px;
       }
-      .boxMsg_input{
+      .boxMsg_input {
         background-color: #141411;
         color: white;
         height: 117px;
         width: 580px;
+        padding: 4px;
+        border-radius: 8px;
       }
-      .box_btnHolder{}
+      .box_btnHolder {
+      }
     }
   }
-  .icons_box{
-    .upper_icons{}
-    .lower_icons{}
+  .icons_box {
+    .upper_icons {
+    }
+    .lower_icons {
+    }
   }
 }
 
 .home_page {
   display: flex;
   flex-direction: column;
-  background-color: #1F1F1A;
+  background-color: #141411;
   .hero_section {
     .hero_img {
       height: 600px;
@@ -61,25 +78,24 @@
       display: flex;
       align-items: center;
       box-shadow: -1px 3px 6px 0px #244400;
-      
     }
     .hero_txt {
       .hero_header {
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 36px;
         font-weight: 600;
         color: white;
       }
       .hero_subhead {
         color: white;
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 28px;
         font-weight: 500;
       }
       .hero_info {
         width: 600px;
         color: white;
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 20px;
         font-weight: 400;
       }
@@ -91,14 +107,20 @@
     display: flex;
     align-self: center;
     width: 1120px;
-    height: 170px;
+    height: 120px;
     border-radius: 15px;
-    background-color: green;
+    background-color: #1f1f1a;
     position: absolute;
-    margin-top: 500px;
+    margin-top: 540px;
     box-shadow: -1px 3px 6px 0px #244400;
 
     .skills_grp {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-around;
+      .skill_icons {
+      }
     }
   }
   .projects_section {
@@ -122,7 +144,6 @@
       height: 250px;
       border-radius: 15px;
       box-shadow: -1px 3px 6px 0px #244400;
-
     }
   }
   .info_holder {
@@ -130,8 +151,16 @@
     flex-direction: column;
     justify-content: center;
     .info_title {
+      color: white;
+      font-size: 22px;
+      font-weight: 600;
+      font-family: "Inter", sans-serif;
     }
     .info_subtitle {
+      color: white;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: "Inter", sans-serif;
     }
     .info_actionGrp {
     }

@@ -6,21 +6,21 @@
       </v-main>
       <v-footer color="#1F1F1A" max-width="1280" height="800">
         <div class="footer">
-          <div class="contact_box">
+          <div class="contact_box my-2">
             <div class="contact_title"></div>
-            <div class="box_row">
-              <div class="box_txt">name</div>
+            <div class="box_row my-2">
+              <div class="box_txt mb-1">name</div>
               <input class="box_input" type="text">
             </div>
-            <div class="box_row">
-              <div class="box_txt">email</div>
+            <div class="box_row my-2">
+              <div class="box_txt mb-1">email</div>
               <input class="boxMail_input" type="text">
             </div>
             <div class="box_row">
-              <div class="box_txt">message</div>
-              <input class="boxMsg_input" type="text">
+              <div class="box_txt mb-1">message</div>
+              <textarea  class="boxMsg_input" name="message text"  cols="30" rows="10"></textarea>
             </div>
-            <div class="box_btnHolder"><v-btn> <span class="btntxt">Contact Me</span></v-btn></div> 
+            <div class="box_btnHolder mt-6"><v-btn> <span class="btntxt">Contact Me</span></v-btn></div> 
           </div>
           <div class="icons_box">
             <div class="upper_icons">
