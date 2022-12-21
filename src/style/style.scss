@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,200;1,600;1,700;1,800&display=swap");
+
+@media (min-width: 1904px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+.footer{
+  height: 800px;
+  width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .contact_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    height: 400px;
+    background-color: #1F1F1A;
+    box-shadow: -1px 3px 6px 0px #244400;
+    .box_row{
+      .box_txt{
+        color: white;
+      }
+      .box_input{
+        background-color: #141411;
+        color: white;
+        height: 38px;
+        width: 580px;
+      }
+      .boxMail_input{
+        background-color: #141411;
+        color: white;
+        height: 38px;
+        width: 580px;
+      }
+      .boxMsg_input{
+        background-color: #141411;
+        color: white;
+        height: 117px;
+        width: 580px;
+      }
+      .box_btnHolder{}
+    }
+  }
+  .icons_box{
+    .upper_icons{}
+    .lower_icons{}
+  }
+}
+
+.home_page {
+  display: flex;
+  flex-direction: column;
+  background-color: #1F1F1A;
+  .hero_section {
+    .hero_img {
+      height: 600px;
+      width: 1280px;
+      display: flex;
+      align-items: center;
+      box-shadow: -1px 3px 6px 0px #244400;
+      
+    }
+    .hero_txt {
+      .hero_header {
+        font-family: 'Inter', sans-serif;
+        font-size: 36px;
+        font-weight: 600;
+        color: white;
+      }
+      .hero_subhead {
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+      }
+      .hero_info {
+        width: 600px;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .hero_actionGrp {
+      }
+    }
+  }
+  .bar-section {
+    display: flex;
+    align-self: center;
+    width: 1120px;
+    height: 170px;
+    border-radius: 15px;
+    background-color: red;
+    position: absolute;
+    margin-top: 500px;
+    box-shadow: -1px 3px 6px 0px #244400;
+
+    .skills_grp {
+    }
+  }
+  .projects_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ps_title {
+      color: white;
+    }
+    .projects_holder {
+    }
+  }
+}
+.project_case {
+  width: 1240px;
+  display: flex;
+  justify-content: space-evenly;
+  .img_holder {
+    .prj_img {
+      width: 400px;
+      height: 250px;
+      border-radius: 15px;
+      box-shadow: -1px 3px 6px 0px #244400;
+
+    }
+  }
+  .info_holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .info_title {
+    }
+    .info_subtitle {
+    }
+    .info_actionGrp {
+    }
+  }
+}
