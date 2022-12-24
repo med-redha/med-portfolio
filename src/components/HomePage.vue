@@ -2,12 +2,12 @@
   <div class="home_page">
     <div class="hero_section " v-for="(item, index) in heroSection" :key="index">
       <v-img class="hero_img" src="../assets/portfolioHero.jpg" alt="">
-        <div class="hero_txt ml-8">
+        <div class="hero_txt ">
           <div class="hero_header">{{ item.header }}</div>
-          <div class="hero_subhead my-4">{{ item.subhead }}</div>
+          <div class="hero_subhead ">{{ item.subhead }}</div>
           <div class="hero_info">{{ item.info }}</div>
-          <div class="hero_actionGrp mt-2">
-            <v-btn outlined dark small >{{
+          <div class="hero_actionGrp ">
+            <v-btn outlined dark large >{{
               item.btnOne
             }}</v-btn>
             <v-btn icon dark
@@ -34,8 +34,8 @@
         </div>
       </div>
     <div class="projects_section ">
-      <div class="ps_title mt-16">Latest Projects</div>
-      <div class="projects_holder my-10">
+      <div class="ps_title ">Latest Projects</div>
+      <div class="projects_holder ">
         <project-case v-for="(cmp, index) in cases" :key="index" :cmp="cmp" />
       </div>
     </div>

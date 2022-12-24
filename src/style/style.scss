@@ -100,6 +100,7 @@ textarea {
       box-shadow: -1px 3px 6px 0px #244400;
     }
     .hero_txt {
+      margin-left: 3rem;
       .hero_header {
         font-family: "Inter", sans-serif;
         font-size: 45px;
@@ -122,7 +123,8 @@ textarea {
       .hero_actionGrp {
         display: flex;
         align-items: center;
-        gap: 15px;
+        margin-top: 4rem;
+        gap: 30px;
         .v-icon {
           width: 80px;
           height: 80px;
@@ -159,6 +161,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 6rem;
     .ps_title {
       color: white;
       font-family: "Inter", sans-serif;
@@ -169,11 +172,15 @@ textarea {
     .projects_holder {
       display: flex;
       flex-direction: column;
+      margin-top: 10rem;
+      margin-bottom: 20rem;
       gap: 80px;
       .project_case {
         width: 1240px;
         display: flex;
         justify-content: space-evenly;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
         .img_holder {
           .prj_img {
             width: 600px;
@@ -188,19 +195,26 @@ textarea {
           flex-direction: column;
           justify-content: center;
           .info_title {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
             color: white;
             font-size: 32px;
             font-weight: 600;
             font-family: "Inter", sans-serif;
           }
           .info_subtitle {
+            width: 300px;
             color: white;
             font-size: 22px;
             font-weight: 400;
             font-family: "Inter", sans-serif;
           }
           .info_actionGrp {
+            margin-top: 4rem;
+            margin-bottom: 8px;
             .btn_clr {
+              width: 130px;
+              height: 45px;
               color: white;
               background-color: #64644b;
             }
@@ -211,6 +225,7 @@ textarea {
               width: 80px;
               height: 80px;
               font-size: 55px;
+              margin-left: 4px;
             }
           }
         }
@@ -236,29 +251,33 @@ textarea {
         box-shadow: -1px 3px 6px 0px #244400;
       }
       .hero_txt {
+        margin-left: 12px;
         .hero_header {
           font-family: "Inter", sans-serif;
-          font-size: 18px;
-          font-weight: 600;
+          font-size: 22px;
+          font-weight: 700;
           color: white;
         }
         .hero_subhead {
+          margin-top: 4px;
+          margin-bottom: 4px;
           color: white;
           font-family: "Inter", sans-serif;
-          font-size: 14px;
-          font-weight: 500;
+          font-size: 18px;
+          font-weight: 600;
         }
         .hero_info {
           width: 200px;
           color: white;
           font-family: "Inter", sans-serif;
-          font-size: 12px;
-          font-weight: 600;
+          font-size: 14px;
+          font-weight: 500;
         }
         .hero_actionGrp {
           display: flex;
           align-items: center;
           gap: 15px;
+          margin-top: 4px;
           .v-icon {
             width: 50px;
             height: 60px;
@@ -273,7 +292,9 @@ textarea {
       display: flex;
       margin-top: 230px;
       width: 280px;
-      height: 50px;
+      height: 60px;
+      align-items: center;
+      justify-content: center;
       margin-bottom: 50px;
       border-radius: 15px;
       background-color: #1f1f1a;
@@ -287,7 +308,7 @@ textarea {
         .skill_imgHold {
           .skill_img {
             width: 25px;
-            height: 20px;
+            height: 22px;
           }
         }
       }
@@ -296,6 +317,7 @@ textarea {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 4rem;
       .ps_title {
         color: white;
         font-family: "Inter", sans-serif;
@@ -306,6 +328,8 @@ textarea {
       .projects_holder {
         display: flex;
         flex-direction: column;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
         .project_case {
           width: 360px;
           display: flex;
