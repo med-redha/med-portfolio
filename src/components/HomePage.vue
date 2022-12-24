@@ -1,50 +1,67 @@
 <template>
   <div class="home_page">
-    <div class="hero_section" v-for="(item, index) in heroSection" :key="index">
-      <v-img class="hero_img" src="../assets/portfolioHero.jpg" alt=""> 
+    <div class="hero_section " v-for="(item, index) in heroSection" :key="index">
+      <v-img class="hero_img" src="../assets/portfolioHero.jpg" alt="">
         <div class="hero_txt ml-8">
-        <div class="hero_header">{{ item.header }}</div>
-        <div class="hero_subhead">{{ item.subhead }}</div>
-        <div class="hero_info">{{ item.info }}</div>
-        <div class="hero_actionGrp">
-          <v-btn depressed dark>{{ item.btnOne }}</v-btn>
-          <v-btn icon dark><v-icon large>{{ item.btnTw }}</v-icon></v-btn>
-          <v-btn icon dark><v-icon large>{{ item.btnTh }}</v-icon></v-btn>
+          <div class="hero_header">{{ item.header }}</div>
+          <div class="hero_subhead my-4">{{ item.subhead }}</div>
+          <div class="hero_info">{{ item.info }}</div>
+          <div class="hero_actionGrp mt-2">
+            <v-btn outlined dark small >{{
+              item.btnOne
+            }}</v-btn>
+            <v-btn icon dark
+              ><v-icon class="v-icon">{{ item.btnTw }}</v-icon></v-btn
+            >
+            <v-btn icon dark
+              ><v-icon class="v-icon">{{ item.btnTh }}</v-icon></v-btn
+            >
+          </div>
+        </div>
+      
+      </v-img>
+     
+    </div>
+    <div class="bar-section">
+        <div class="skills_grp">
+          <div
+            class="skill_imgHold"
+            v-for="(skill, index) in skills"
+            :key="index"
+          >
+            <img class="skill_img" :src="skill.img" alt="" />
+          </div>
         </div>
       </div>
-      </v-img>
-      
-    </div>
-    <div class="bar-section ">
-      <div class="skills_grp">
-        <v-icon x-large dark >mdi-language-html5</v-icon>
-        <v-icon x-large dark>mdi-vuejs</v-icon>
-        <v-icon x-large dark>mdi-vuetify</v-icon>
-        <v-icon x-large dark>mdi-git</v-icon>
-        <v-icon x-large dark>mdi-linux</v-icon>
-        <v-icon x-large dark>mdi-sass</v-icon>
-        <v-icon x-large dark>mdi-language-javascript</v-icon>
-      </div>
-    </div>
-    <div class="projects_section mt-16">
+    <div class="projects_section ">
       <div class="ps_title mt-16">Latest Projects</div>
-      <div class="projects_holder">
-        <project-case v-for="(cmp,index) in cases " :key="index" :cmp="cmp"/>
+      <div class="projects_holder my-10">
+        <project-case v-for="(cmp, index) in cases" :key="index" :cmp="cmp" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import prevOne from '../assets/projectprev.jpg';
-import prevTwo from '../assets/alternativehero.jpg';
-import prevThree from '../assets/herocandi.jpg';
-import ProjectCase from './ProjectCase.vue';
+//logos
+import jslogo from "../assets/jsLogo.png";
+import tml from "../assets/htmlLogo.png";
+import linuxLogo from "../assets/linuxLogo.png";
+import vueLogo from "../assets/logo.svg";
+import vuetifyLogo from "../assets/logo.png";
+import sassLogo from "../assets/sasslogo.png";
+
+//images
+import prevOne from "../assets/projectprev.jpg";
+import prevTwo from "../assets/alternativehero.jpg";
+import prevThree from "../assets/herocandi.jpg";
+//components
+import ProjectCase from "./ProjectCase.vue";
 export default {
   name: "HomePage",
-components:{
-  ProjectCase,
-},
+  components: {
+    ProjectCase,
+  },
   data() {
     return {
       heroSection: [
@@ -58,27 +75,47 @@ components:{
           btnTh: "mdi-linkedin",
         },
       ],
-      cases:[
+      skills: [
         {
-          img:prevOne,
-          title:'Project Name',
-          subtitle:'breif app explanation',
-          btnOne:'Demo',
-          btnTwo:'mdi-github',
+          img: tml,
         },
         {
-          img:prevTwo,
-          title:'Project Name',
-          subtitle:'breif app explanation',
-          btnOne:'Demo',
-          btnTwo:'mdi-github ',
+          img: jslogo,
         },
         {
-          img:prevThree,
-          title:'Project Name',
-          subtitle:'breif app explanation',
-          btnOne:'Demo',
-          btnTwo:'mdi-github',
+          img: vueLogo,
+        },
+        {
+          img: vuetifyLogo,
+        },
+        {
+          img: linuxLogo,
+        },
+        {
+          img: sassLogo,
+        },
+      ],
+      cases: [
+        {
+          img: prevOne,
+          title: "Project Name",
+          subtitle: "breif app explanation",
+          btnOne: "Demo",
+          btnTwo: "mdi-github",
+        },
+        {
+          img: prevTwo,
+          title: "Project Name",
+          subtitle: "breif app explanation",
+          btnOne: "Demo",
+          btnTwo: "mdi-github ",
+        },
+        {
+          img: prevThree,
+          title: "Project Name",
+          subtitle: "breif app explanation",
+          btnOne: "Demo",
+          btnTwo: "mdi-github",
         },
       ],
     };

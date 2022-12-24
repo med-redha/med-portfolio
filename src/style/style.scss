@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,200;1,600;1,700;1,800&display=swap");
 
 @media (min-width: 1904px) {
-  .container {
-    max-width: 1280px;
+  .home_page {
+    max-width: 1901px;
   }
 }
 input {
@@ -13,10 +13,10 @@ textarea {
 }
 .footer {
   height: 800px;
-  width: 1280px;
+  width: 1440px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   .contact_box {
     display: flex;
     flex-direction: column;
@@ -60,9 +60,29 @@ textarea {
     }
   }
   .icons_box {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     .upper_icons {
+      display: flex;
+      gap: 50px;
+      .v-icon {
+        font-size: 80px;
+      }
+      .icons {
+        width: 120px;
+        height: 120px;
+        font-size: 80px;
+      }
     }
     .lower_icons {
+      display: flex;
+      gap: 50px;
+      .v-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 80px;
+      }
     }
   }
 }
@@ -74,7 +94,7 @@ textarea {
   .hero_section {
     .hero_img {
       height: 600px;
-      width: 1280px;
+      width: 1904px;
       display: flex;
       align-items: center;
       box-shadow: -1px 3px 6px 0px #244400;
@@ -82,24 +102,32 @@ textarea {
     .hero_txt {
       .hero_header {
         font-family: "Inter", sans-serif;
-        font-size: 36px;
+        font-size: 45px;
         font-weight: 600;
         color: white;
       }
       .hero_subhead {
         color: white;
         font-family: "Inter", sans-serif;
-        font-size: 28px;
+        font-size: 38px;
         font-weight: 500;
       }
       .hero_info {
         width: 600px;
         color: white;
         font-family: "Inter", sans-serif;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 400;
       }
       .hero_actionGrp {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .v-icon {
+          width: 80px;
+          height: 80px;
+          font-size: 55px;
+        }
       }
     }
   }
@@ -119,7 +147,11 @@ textarea {
       align-items: center;
       width: 100%;
       justify-content: space-around;
-      .skill_icons {
+      .skill_imgHold {
+        .skill_img {
+          width: 70px;
+          height: 80px;
+        }
       }
     }
   }
@@ -129,40 +161,199 @@ textarea {
     align-items: center;
     .ps_title {
       color: white;
+      font-family: "Inter", sans-serif;
+
+      font-size: 38px;
+      font-weight: 600;
     }
     .projects_holder {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+      .project_case {
+        width: 1240px;
+        display: flex;
+        justify-content: space-evenly;
+        .img_holder {
+          .prj_img {
+            width: 600px;
+            height: 350px;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: -1px 3px 6px 0px #244400;
+          }
+        }
+        .info_holder {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .info_title {
+            color: white;
+            font-size: 32px;
+            font-weight: 600;
+            font-family: "Inter", sans-serif;
+          }
+          .info_subtitle {
+            color: white;
+            font-size: 22px;
+            font-weight: 400;
+            font-family: "Inter", sans-serif;
+          }
+          .info_actionGrp {
+            .btn_clr {
+              color: white;
+              background-color: #64644b;
+            }
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            .v-icon {
+              width: 80px;
+              height: 80px;
+              font-size: 55px;
+            }
+          }
+        }
+      }
     }
   }
 }
-.project_case {
-  width: 1240px;
-  display: flex;
-  justify-content: space-evenly;
-  .img_holder {
-    .prj_img {
-      width: 400px;
-      height: 250px;
-      border-radius: 15px;
-      box-shadow: -1px 3px 6px 0px #244400;
-    }
-  }
-  .info_holder {
+// mobile_style
+@media (max-width: 600px) {
+  .home_page {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    .info_title {
-      color: white;
-      font-size: 22px;
-      font-weight: 600;
-      font-family: "Inter", sans-serif;
+    background-color: #141411;
+    .hero_section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .hero_img {
+        height: 260px;
+        width: 350px;
+        display: flex;
+        align-items: center;
+        box-shadow: -1px 3px 6px 0px #244400;
+      }
+      .hero_txt {
+        .hero_header {
+          font-family: "Inter", sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+          color: white;
+        }
+        .hero_subhead {
+          color: white;
+          font-family: "Inter", sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+        }
+        .hero_info {
+          width: 200px;
+          color: white;
+          font-family: "Inter", sans-serif;
+          font-size: 12px;
+          font-weight: 600;
+        }
+        .hero_actionGrp {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          .v-icon {
+            width: 50px;
+            height: 60px;
+            font-size: 28px;
+          }
+        }
+      }
+      
+      
     }
-    .info_subtitle {
-      color: white;
-      font-size: 16px;
-      font-weight: 400;
-      font-family: "Inter", sans-serif;
+    .bar-section {
+      display: flex;
+      margin-top: 230px;
+      width: 280px;
+      height: 50px;
+      margin-bottom: 50px;
+      border-radius: 15px;
+      background-color: #1f1f1a;
+      box-shadow: -1px 3px 6px 0px #244400;
+
+      .skills_grp {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        .skill_imgHold {
+          .skill_img {
+            width: 25px;
+            height: 20px;
+          }
+        }
+      }
     }
-    .info_actionGrp {
+    .projects_section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .ps_title {
+        color: white;
+        font-family: "Inter", sans-serif;
+
+        font-size: 28px;
+        font-weight: 600;
+      }
+      .projects_holder {
+        display: flex;
+        flex-direction: column;
+        .project_case {
+          width: 360px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .img_holder {
+            .prj_img {
+              width: 200px;
+              height: 150px;
+              border-radius: 15px;
+              object-fit: cover;
+              box-shadow: -1px 3px 6px 0px #244400;
+            }
+          }
+          .info_holder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .info_title {
+              color: white;
+              font-size: 22px;
+              font-weight: 700;
+              font-family: "Inter", sans-serif;
+            }
+            .info_subtitle {
+              color: white;
+              font-size: 16px;
+              font-weight: 600;
+              font-family: "Inter", sans-serif;
+            }
+            .info_actionGrp {
+              .btn_clr {
+                color: white;
+                background-color: #64644b;
+              }
+              display: flex;
+              align-items: center;
+              gap: 30px;
+              .v-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 45px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
