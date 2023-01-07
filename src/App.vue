@@ -23,12 +23,12 @@
           </div>
           <div class="icons_box ">
             <div class="upper_icons">
-              <v-btn icon dark href="#"><v-icon class="icons">mdi-github</v-icon></v-btn>
-              <v-btn icon dark href="#"><v-icon class="icons">mdi-linkedin</v-icon></v-btn>
+              <v-btn icon dark href="https://github.com/med-redha"><v-icon class="icons">mdi-github</v-icon></v-btn>
+              <v-btn icon dark href="https://www.linkedin.com/in/redha-boutahir-7a596223b/"><v-icon class="icons">mdi-linkedin</v-icon></v-btn>
             </div>
             <div class="lower_icons">
-              <v-btn icon dark href="#"><v-icon class="icons">mdi-facebook</v-icon></v-btn>
-              <v-btn icon dark href="#"><v-icon class="icons">mdi-twitter</v-icon></v-btn>
+              <v-btn icon dark href="https://www.facebook.com/profile.php?id=100078919627069"><v-icon class="icons">mdi-facebook</v-icon></v-btn>
+              <v-btn icon dark href="https://twitter.com/RedhaBoutahir"><v-icon class="icons">mdi-twitter</v-icon></v-btn>
             </div>
           </div>
         </div>

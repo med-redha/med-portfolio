@@ -8,10 +8,10 @@
           <div class="hero_info">{{ item.info }}</div>
           <div class="hero_actionGrp">
             <v-btn outlined dark large>{{ item.btnOne }}</v-btn>
-            <v-btn icon dark
+            <v-btn icon dark href="https://www.linkedin.com/in/redha-boutahir-7a596223b/"
               ><v-icon class="v-icon">{{ item.btnTw }}</v-icon></v-btn
             >
-            <v-btn icon dark
+            <v-btn icon dark href="https://github.com/med-redha"
               ><v-icon class="v-icon">{{ item.btnTh }}</v-icon></v-btn
             >
           </div>
