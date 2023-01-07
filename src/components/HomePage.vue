@@ -1,15 +1,13 @@
 <template>
   <div class="home_page">
-    <div class="hero_section " v-for="(item, index) in heroSection" :key="index">
+    <div class="hero_section" v-for="(item, index) in heroSection" :key="index">
       <v-img class="hero_img" src="../assets/portfolioHero.jpg" alt="">
-        <div class="hero_txt ">
+        <div class="hero_txt">
           <div class="hero_header">{{ item.header }}</div>
-          <div class="hero_subhead ">{{ item.subhead }}</div>
+          <div class="hero_subhead">{{ item.subhead }}</div>
           <div class="hero_info">{{ item.info }}</div>
-          <div class="hero_actionGrp ">
-            <v-btn outlined dark large >{{
-              item.btnOne
-            }}</v-btn>
+          <div class="hero_actionGrp">
+            <v-btn outlined dark large>{{ item.btnOne }}</v-btn>
             <v-btn icon dark
               ><v-icon class="v-icon">{{ item.btnTw }}</v-icon></v-btn
             >
@@ -18,24 +16,22 @@
             >
           </div>
         </div>
-      
       </v-img>
-     
     </div>
     <div class="bar-section">
-        <div class="skills_grp">
-          <div
-            class="skill_imgHold"
-            v-for="(skill, index) in skills"
-            :key="index"
-          >
-            <img class="skill_img" :src="skill.img" alt="" />
-          </div>
+      <div class="skills_grp">
+        <div
+          class="skill_imgHold"
+          v-for="(skill, index) in skills"
+          :key="index"
+        >
+          <img class="skill_img" :src="skill.img" alt="" />
         </div>
       </div>
-    <div class="projects_section ">
-      <div class="ps_title ">Latest Projects</div>
-      <div class="projects_holder ">
+    </div>
+    <div class="projects_section">
+      <div class="ps_title">Latest Projects</div>
+      <div class="projects_holder">
         <project-case v-for="(cmp, index) in cases" :key="index" :cmp="cmp" />
       </div>
     </div>
