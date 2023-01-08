@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,200;1,600;1,700;1,800&display=swap");
 
-@media (min-width: 1904px) {
-  .home_page {
-    max-width: 1901px;
-  }
-}
+@media (min-width: 900px) {
+  
+
 input {
   outline: none;
 }
@@ -99,6 +97,8 @@ textarea {
   display: flex;
   flex-direction: column;
   background-color: #141411;
+      max-width: 1901px;
+
   .hero_section {
     .hero_img {
       height: 600px;
@@ -171,11 +171,11 @@ textarea {
     align-items: center;
     margin-top: 6rem;
     .ps_title {
+      margin-top: 80px;
       color: white;
       font-family: "Inter", sans-serif;
-
-      font-size: 38px;
-      font-weight: 600;
+      font-size: 52px;
+      font-weight: 800;
     }
     .projects_holder {
       display: flex;
@@ -241,17 +241,22 @@ textarea {
     }
   }
 }
+}
 // mobile_style
 @media (max-width: 600px) {
+  footer{
+    width: 600px;
+  }
   .footer {
   height: 800px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+  width: 600px;
+  gap: 50px;
   .contact_box {
     display: flex;
     flex-direction: column;
+    align-self: center;
     align-items: center;
     justify-content: center;
     width: 300px;
@@ -294,30 +299,33 @@ textarea {
   .icons_box {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
     gap: 50px;
     .upper_icons {
       display: flex;
       width: 200px;
-      gap: 30px;
+      gap: 80px;
       .v-icon {
         font-size: 80px;
       }
       .icons {
         width: 80px;
         height: 80px;
-        font-size: 60px;
+        font-size: 80px;
       }
     }
     .lower_icons {
       margin-top: 10px;
       display: flex;
-      gap: 30px;
+      gap: 80px;
       width: 200px;
       .v-icon {
         width: 80px;
         height: 80px;
-        font-size: 60px;
+        font-size: 80px;
       }
     }
   }
@@ -326,13 +334,14 @@ textarea {
     display: flex;
     flex-direction: column;
     background-color: #141411;
+    width: 600px;
     .hero_section {
       display: flex;
       flex-direction: column;
       align-items: center;
       .hero_img {
-        height: 260px;
-        width: 350px;
+        height: 360px;
+        width: 600px;
         display: flex;
         align-items: center;
         box-shadow: -1px 3px 6px 0px #244400;
@@ -341,7 +350,7 @@ textarea {
         margin-left: 12px;
         .hero_header {
           font-family: "Inter", sans-serif;
-          font-size: 22px;
+          font-size: 32px;
           font-weight: 700;
           color: white;
         }
@@ -350,14 +359,14 @@ textarea {
           margin-bottom: 4px;
           color: white;
           font-family: "Inter", sans-serif;
-          font-size: 18px;
+          font-size: 22px;
           font-weight: 600;
         }
         .hero_info {
-          width: 200px;
+          width: 300px;
           color: white;
           font-family: "Inter", sans-serif;
-          font-size: 14px;
+          font-size: 18px;
           font-weight: 500;
         }
         .hero_actionGrp {
@@ -368,7 +377,7 @@ textarea {
           .v-icon {
             width: 50px;
             height: 60px;
-            font-size: 28px;
+            font-size: 38px;
           }
         }
       }
@@ -377,9 +386,11 @@ textarea {
     }
     .bar-section {
       display: flex;
-      margin-top: 230px;
-      width: 280px;
-      height: 60px;
+      margin-top: 320px;
+      position: absolute;
+      align-self: center;
+      width: 480px;
+      height: 80px;
       align-items: center;
       justify-content: center;
       margin-bottom: 50px;
@@ -394,8 +405,8 @@ textarea {
         justify-content: space-around;
         .skill_imgHold {
           .skill_img {
-            width: 25px;
-            height: 22px;
+            width: 45px;
+            height: 42px;
           }
         }
       }
@@ -405,27 +416,29 @@ textarea {
       flex-direction: column;
       align-items: center;
       margin-top: 4rem;
+      margin-bottom: 50px;
       .ps_title {
         color: white;
         font-family: "Inter", sans-serif;
-
-        font-size: 28px;
-        font-weight: 600;
+        font-size: 42px;
+        font-weight: 800;
+        margin-top: 20px;
+        margin-bottom: 40px;
       }
       .projects_holder {
         display: flex;
         flex-direction: column;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+        width: 600px;
+        gap: 80px;
         .project_case {
-          width: 360px;
+          width: 600px;
           display: flex;
           flex-direction: column;
           align-items: center;
           .img_holder {
             .prj_img {
-              width: 200px;
-              height: 150px;
+              width: 400px;
+              height: 250px;
               border-radius: 15px;
               object-fit: cover;
               box-shadow: -1px 3px 6px 0px #244400;
@@ -436,15 +449,17 @@ textarea {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            width: 600px;
+            gap: 25px;
             .info_title {
               color: white;
-              font-size: 22px;
+              font-size: 43px;
               font-weight: 700;
               font-family: "Inter", sans-serif;
             }
             .info_subtitle {
               color: white;
-              font-size: 16px;
+              font-size: 22px;
               font-weight: 600;
               font-family: "Inter", sans-serif;
             }
@@ -459,7 +474,7 @@ textarea {
               .v-icon {
                 width: 60px;
                 height: 60px;
-                font-size: 45px;
+                font-size: 65px;
               }
             }
           }
