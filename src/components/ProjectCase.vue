@@ -1,16 +1,16 @@
 <template>
-  <div class="project_case" :cmp="cmp">
+  <div class="project_case " :cmp="cmp">
     <div class="img_holder">
       <img class="prj_img" :src="cmp.img" alt="" />
     </div>
     <div class="info_holder">
-      <div class="info_title">{{ cmp.title }}</div>
+      <div class="info_title ">{{ cmp.title }}</div>
       <div class="info_subtitle">{{ cmp.subtitle }}</div>
-      <div class="info_actionGrp">
-        <v-btn>{{ cmp.btnOne }}</v-btn>
-        <v-btn>
-          <v-icon>{{ cmp.btnTwo }}</v-icon>
-          <span>{{ cmp.btnTwotxt }}</span>
+      <div class="info_actionGrp ">
+
+        <v-btn width="120" height="58" class="btn_clr"  href="#">{{ cmp.btnOne }}</v-btn>
+        <v-btn icon  dark href="#">
+          <v-icon class="v-icon">{{ cmp.btnTwo }}</v-icon>
         </v-btn>
       </div>
     </div>
