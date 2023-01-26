@@ -1,5 +1,13 @@
 <template>
   <v-app>
+    <v-app-bar
+  color="#1e1e1e"
+  flat
+> <div class="bar">
+  <div class="logo_holder">
+    <img class="logo" src="./assets/portfoliologo.png" alt="">
+  </div>
+</div></v-app-bar>
       <v-main>
         <home-page />
       </v-main>

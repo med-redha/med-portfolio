@@ -42,12 +42,12 @@
 
 <script>
 //logos
-import tml from "../assets/htmlLogo.png";
-
 //images
 import projectOne from "../assets/projectOne.png";
 import projectTwo from "../assets/snapchallenge.png";
 import projectThree from "../assets/femlandingpage.png";
+import logo from "../assets/portfoliologo.png";
+
 //import prevThree from "../assets/herocandi.jpg";
 //components
 import ProjectCase from "./ProjectCase.vue";
@@ -72,7 +72,7 @@ export default {
       ],
       aboutMe: [
         {
-          img: tml,
+          img: logo,
           title: "About Me",
           description:
             "Hi! I am Redha Boutahir, a web designer/developer focused on crafting great web experiences. Designing and Coding have been my passion since the days I started working with computers but I found myself into web design/development since 2022. I enjoy creating beautifully designed, intuitive and functional websites.",
@@ -92,7 +92,7 @@ export default {
         {
           img: projectTwo,
           title: "Intro-section",
-          subtitle: "Challenged by freontend mentor, made the project with vue.js,vuetify,scss. mobile first design ",
+          subtitle: "Challenged by freontend mentor, made the project with vue.js,vuetify, mobile first design ",
           btnOne: "Demo",
           href:'https://fem-snapchallenge-by-redha.netlify.app/',
           btnTwo: "mdi-github ",
