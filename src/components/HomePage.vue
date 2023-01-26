@@ -7,44 +7,42 @@
           <div class="hero_subhead">{{ item.subhead }}</div>
           <div class="hero_info">{{ item.info }}</div>
           <div class="hero_actionGrp">
-            <v-btn icon dark href= "https://github.com/med-redha"     
+            <v-btn icon dark href="https://github.com/med-redha"
               ><v-icon class="v-icon">{{ item.btnTw }}</v-icon></v-btn
             >
-            <v-btn icon dark href=  "https://www.linkedin.com/in/redha-boutahir-7a596223b/"
+            <v-btn
+              icon
+              dark
+              href="https://www.linkedin.com/in/redha-boutahir-7a596223b/"
               ><v-icon class="v-icon">{{ item.btnTh }}</v-icon></v-btn
             >
           </div>
         </div>
       </v-img>
     </div>
-    <div class="bar-section">
-      <div class="skills_grp">
-        <div
-          class="skill_imgHold"
-          v-for="(skill, index) in skills"
-          :key="index"
-        >
-          <img class="skill_img" :src="skill.img" alt="" />
+    <div class="About_me" v-for="(item, index) in aboutMe" :key="index">
+      <div class="me_title">{{ item.title }}</div>
+      <div class="me_content">
+        <div class="me_imageHolder">
+          <img class="me_img" :src="item.img" alt="redha boutahir" />
         </div>
+        <div class="me_discription">{{ item.description }}</div>
       </div>
     </div>
-    <div class="projects_section">
-      <div class="ps_title">Latest Projects</div>
-      <div class="projects_holder">
-        <project-case v-for="(cmp, index) in cases" :key="index" :cmp="cmp" />
+      <div class="skills_container">
+        <my-skills />
+        
       </div>
-    </div>
+    
+     <div class="my_projects">
+      <project-case v-for="(cmp, index) in cases" :key="index" :cmp="cmp" />
+    </div> 
   </div>
 </template>
 
 <script>
 //logos
-import jslogo from "../assets/jsLogo.png";
 import tml from "../assets/htmlLogo.png";
-import linuxLogo from "../assets/linuxLogo.png";
-import vueLogo from "../assets/logo.svg";
-import vuetifyLogo from "../assets/logo.png";
-import sassLogo from "../assets/sasslogo.png";
 
 //images
 import prevOne from "../assets/projectprev.jpg";
@@ -52,10 +50,12 @@ import prevTwo from "../assets/alternativehero.jpg";
 import prevThree from "../assets/herocandi.jpg";
 //components
 import ProjectCase from "./ProjectCase.vue";
+import mySkills from "./MySkills.vue";
 export default {
   name: "HomePage",
   components: {
     ProjectCase,
+    mySkills,
   },
   data() {
     return {
@@ -69,26 +69,15 @@ export default {
           btnTh: "mdi-linkedin",
         },
       ],
-      skills: [
+      aboutMe: [
         {
           img: tml,
-        },
-        {
-          img: jslogo,
-        },
-        {
-          img: vueLogo,
-        },
-        {
-          img: vuetifyLogo,
-        },
-        {
-          img: linuxLogo,
-        },
-        {
-          img: sassLogo,
+          title: "About Me",
+          description:
+            "Hi! I am Redha Boutahir, a web designer/developer focused on crafting great web experiences. Designing and Coding have been my passion since the days I started working with computers but I found myself into web design/development since 2007. I enjoy creating beautifully designed, intuitive and functional websites.",
         },
       ],
+      
       cases: [
         {
           img: prevOne,
