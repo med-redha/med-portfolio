@@ -92,7 +92,7 @@ export default {
         {
           img: projectTwo,
           title: "Intro-section",
-          subtitle: "Challenged by freontend mentor, made the project with vue.js,vuetify, mobile first design ",
+          subtitle: "frontend mentor Challenge, made with vue.js,vuetify, mobile first design",
           btnOne: "Demo",
           href:'https://fem-snapchallenge-by-redha.netlify.app/',
           btnTwo: "mdi-github ",
@@ -101,7 +101,7 @@ export default {
         {
           img: projectThree,
           title: "Home-page",
-          subtitle: "Landing page , adapting the mobile first design, using vue.js,vuetify,scss",
+          subtitle: "Landing page,mobile first design,with vue.js,vuetify,scss",
           btnOne: "Demo",
           href: 'https://femlandingpageredhaboutahir.netlify.app/',
           btnTwo: "mdi-github",

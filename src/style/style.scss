@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,200;1,600;1,700;1,800&display=swap");
-.v-toolbar__content{
+
+@media (max-width:699px) {
+  .v-toolbar__content{
   width: 100%;
-  
   .bar{
     display: flex;
     .logo_holder{
@@ -22,6 +23,7 @@
   gap: 1.25rem;
   width: 100%;
   height: 100vh;
+  background-color: black;
   .hero_section {
     max-width: 37.5rem;
     width: 100%;
@@ -31,7 +33,7 @@
       height: 15.625rem;
       object-fit: contain;
       border-radius: 6px;
-      box-shadow: 1px 1px 5px 3px green;
+      box-shadow: 1px 1px 5px 3px white;
       .hero_txt {
         display: flex;
         flex-direction: column;
@@ -87,6 +89,7 @@
       text-align: center;
       line-height: 2.3rem;
       font-weight: 700;
+      color: white;
     }
     .me_content {
       display: flex;
@@ -103,6 +106,8 @@
           height: 6rem;
           object-fit: cover;
           border-radius: 50%;
+          box-shadow:  0px 0px 5px 3px white;
+
         }
       }
       .me_discription {
@@ -111,6 +116,7 @@
         font-size: 1rem;
         font-weight: 500;
         text-align: center;
+        color: white;
       }
     }
   }
@@ -125,6 +131,7 @@
     align-items: center;
     flex-direction: column;
     gap: 6.25rem;
+    background-color: black;
   }
 }
 //component style
@@ -146,7 +153,7 @@
       height: 15.5rem;
       object-fit: fill;
       border-radius: 10px;
-      box-shadow: 1px 1px 5px 3px green;
+      box-shadow: 1px 1px 5px 3px white;
     }
   }
   .info_holder {
@@ -161,11 +168,13 @@
       text-align: center;
       font-size: 2rem;
       font-weight: 600;
+      color: white;
     }
     .info_subtitle {
       text-align: center;
       font-size: 1.1rem;
       font-weight: 500;
+      color: white;
     }
     .info_actionGrp {
       display: flex;
@@ -176,7 +185,7 @@
         background-color: beige;
       }
       .btns {
-        color: black;
+        color: white;
         .v-icon {
           font-size: 3.3rem;
         }
@@ -212,32 +221,253 @@
     }
   }
 }
+  
+}
 
 // desktop style
 @media (min-width: 700px) {
-  .home_page {
+  .v-toolbar__content{
+  width: 100%;
+  .bar{
+    display: flex;
+    .logo_holder{
+      .logo{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+.home_page {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 1900px;
+  width: 100%;
+  margin: auto;
+  background-color: black;
+ 
+  .hero_section {
+    max-width: 1900px;
     width: 100%;
-    .hero_section {
-      .hero_img {
-        .hero_txt {
-          .hero_header {
-          }
-          .hero_subhead {
-          }
-          .hero_info {
-          }
-          .hero_actionGrp {
-            .v-icon {
-            }
+    max-height: 46.6rem;
+    height: 100%;
+    .hero_img {
+      max-width: 1900px;
+      width: 100%;
+      max-height: 45.625rem;
+      height: 100%;
+      object-fit: fill;
+      border-radius: 6px;
+      box-shadow: 1px 1px 5px 3px white;
+      .hero_txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 1900px;
+        width: 100%;
+        max-height: 40.625rem;
+        height: 100%;
+        gap: 0.225rem;
+        .hero_header {
+          text-align: center;
+          color: white;
+          font-size: 3.3rem;
+          font-weight: 600;
+        }
+        .hero_subhead {
+          color: white;
+          font-size: 3rem;
+          font-weight: 800;
+          text-align: center;
+        }
+        .hero_info {
+          text-align: center;
+          color: white;
+          font-size: 1.7rem;
+          font-weight: 500;
+
+        }
+        .hero_actionGrp {
+          display: flex;
+          justify-self: end;
+          gap: 5.25rem;
+          .v-icon {
+            font-size: 4rem;
           }
         }
       }
     }
-    .About_me {
+  }
+  .About_me {
+    max-height: 31.25rem;
+    height: 100%;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin: 10rem 0rem 0rem;
+    .me_title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 1000px;
+      width: 100%;
+      display: flex;
+      font-size: 3.1rem;
+      text-align: center;
+      line-height: 2.3rem;
+      font-weight: 700;
+      color: white;
+
     }
-    .my_skills {
-    }
-    .my_projects {
+    .me_content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 0rem 0rem 20rem;
+      gap: 3rem;
+      .me_imageHolder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .me_img {
+          max-width: 7rem;
+          width: 100%;
+          max-height: 7rem;
+          height: 100%;
+          object-fit: fill;
+          border-radius: 50%;
+          box-shadow: 1px 1px 5px 3px white;
+        }
+      }
+      .me_discription {
+        max-width: 65.5rem;
+        width: 100%;
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-align: center;
+        color: white;
+      }
     }
   }
+  .skills_container {
+    max-width: 900px;
+    width: 95%;
+    gap: 18rem;
+    max-height: 90rem;
+    height: 100%;
+    margin: 0rem 0rem 10rem;
+  }
+
+  .my_projects {
+    max-width: 1900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 22.25rem;
+  }
+}
+//component style
+.project_case {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1280px;
+  width: 100%;
+  max-height: 33.25rem;
+  height: 100%;
+  border-radius: 10px;
+
+  .img_holder {
+    .prj_img {
+      max-width: 57.875rem;
+      width: 100%;
+      max-height: 33.25rem;
+      height: 100%;
+      object-fit: fill;
+      border-radius: 10px;
+      box-shadow: 1px 1px 5px 3px white;
+    }
+  }
+  .info_holder {
+    max-width: 47.5rem;
+    width: 100%;
+    display: flex;
+    max-height: 10.25rem;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    .info_title {
+      text-align: center;
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: white;
+    }
+    .info_subtitle {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: white;
+    }
+    .info_actionGrp {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      .btn_clr {
+        align-self: center;
+        background-color: beige;
+      }
+      .btns {
+        color: white;
+        .v-icon {
+          font-size: 4.9rem;
+        }
+      }
+    }
+  }
+}
+.my_skills {
+  background-color: rgb(24, 24, 24);
+  max-width: 1200px;
+  width: 100%;
+  max-height: 600px;
+  height: 100%;
+  border-radius: 10px;
+  gap: 7.25rem;
+  box-shadow: 2px 4px 11px white;
+
+  .skills_header {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+  }
+  .skills_contained {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 6rem;
+    margin: 5rem 0rem;
+    .skills_holders {
+      .skills_class {
+        max-width: 8.75rem;
+        width: 100%;
+        max-height: 9.75rem;
+        height: 100%;
+        object-fit: fill;
+      }
+    }
+  }
+}
 }

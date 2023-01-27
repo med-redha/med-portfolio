@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar
-  color="#1e1e1e"
+  color="orange"
   flat
 > <div class="bar">
   <div class="logo_holder">
