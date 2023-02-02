@@ -21,13 +21,13 @@
         </div>
       </v-img>
     </div>
-    <div class="About_me" v-for="(item, index) in aboutMe" :key="index">
-      <div class="me_title">{{ item.title }}</div>
+    <div class="About_me" v-for="(elem, index) in aboutMe" :key="index">
+      <div class="me_title">{{ elem.title }}</div>
       <div class="me_content">
         <div class="me_imageHolder">
-          <img class="me_img" :src="item.img" alt="redha boutahir" />
+          <img class="me_img" :src="elem.img" alt="redha boutahir" />
         </div>
-        <div class="me_discription">{{ item.description }}</div>
+        <div class="me_discription">{{ elem.description }}</div>
       </div>
     </div>
     <div class="skills_container">
@@ -83,7 +83,7 @@ export default {
         {
           img: projectOne,
           title: "fem-product-card",
-          subtitle: "Mobile first design,showcases a product card made with purely html and css.  This was a challenge of frontend mentor.  ",
+          subtitle: "Mobile first design,product card made with purely html and css.  This was a challenge of frontend mentor.  ",
           btnOne: "Demo",
           href: 'https://fem-productcardbyredha.netlify.app/',
           btnTwo: "mdi-github",
